@@ -1,0 +1,13 @@
+<html>
+  <body>
+    <div>
+      <%= typeof msg != 'undefined' ? msg : '' %>
+      <form action="/upload" enctype="multipart/form-data" method="POST">
+        <input type="file" class="admin__input" id="myFile" name="myFile" />
+        <input class="admin__submit" type="submit" />
+      </form>  
+      <br/>
+      <img src="<%= typeof file != 'undefined' ? file : '' %>" class="responsive-img">     
+    </div>
+  </body>
+</html>
